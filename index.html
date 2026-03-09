@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Web Page</title>
+
+
+    <script>
+        // Function to change the background color
+        function changeBackground() {
+            document.body.style.backgroundColor = "lightblue";
+
+        }
+
+        // Function to show an alert message
+        function showAlert() {
+            alert("Welcome to JavaScript!");
+        }
+
+        // Function to hide the paragraph
+        function hideParagraph() {
+            document.getElementById("intro").style.display = "none";
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <p id="intro">
+        Hello! My name is Fahad. I am learning web development and exploring HTML, CSS, and JavaScript.
+        
+    </p>
+
+    <img src="https://cdn.pixabay.com/photo/2021/12/12/20/00/play-6865967_1280.jpg" alt="Girl in a jacket" width="500" height="500">
+    
+    <br>
+
+    <button type="button" onclick="changeBackground()">Button 1</button>
+
+    <button type="button" onclick="showAlert()">Button 2</button>
+
+    <button type="button" onclick="hideParagraph()">Button 3</button>
+
+
+    <!--
+    (1) What is JavaScript used for?
+    JavaScript is used to make web pages interactive. It allows developers to add dynamic behavior
+    such as responding to user actions, modifying page content, validating forms, and controlling
+    multimedia elements.
+
+    (2) What does onclick do?
+    The onclick event is triggered when a user clicks on an HTML element like a button.
+    It runs a specified JavaScript function when the click happens.
+    -->
+
+</body>
+</html>
