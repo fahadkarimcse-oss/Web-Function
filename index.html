@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First Web Page</title>
-
+    <link rel="stylesheet" href="style.css">
 
     <script>
         // Array of colors to cycle through
@@ -23,7 +23,7 @@
         }
 
         // Function to toggle (show/hide) the paragraph
-        function toggleParagraph() {
+        function hideParagraph() {
             const para = document.getElementById("intro");
             if (para.style.display === "none") {
                 para.style.display = "block";
@@ -40,7 +40,7 @@
 
     <button type="button" onclick="changeBackground()">Change Background Color</button>
     <button type="button" onclick="showAlert()">Show Message</button>
-    <button type="button" onclick="toggleParagraph()">Show/Hide Paragraph</button>
+    <button type="button" onclick="hideParagraph()">Show/Hide Paragraph</button>
 
     <br>
 
@@ -65,13 +65,13 @@
 
     <!--
     (1) What is JavaScript used for?
-    JavaScript is used to make web pages interactive. It allows developers to add dynamic behavior
+    JavaScript is used for making web pages interactive, which allows developers to add dynamic behavior
     such as responding to user actions, modifying page content, validating forms, and controlling
     multimedia elements.
 
     (2) What does onclick do?
-    The onclick event is triggered when a user clicks on an HTML element like a button.
-    It runs a specified JavaScript function when the click happens.
+    Onclick runs a specified JavaScript function when a click is made.
+    It triggers an event when a user clicks on an HTML element like a button.
     -->
 
 </body>
