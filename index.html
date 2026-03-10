@@ -7,10 +7,14 @@
 
 
     <script>
-        // Function to change the background color
-        function changeBackground() {
-            document.body.style.backgroundColor = "lightblue";
+        // Array of colors to cycle through
+        const colors = ["lightblue", "red", "green", "orange", "pink"];
+        let colorIndex = 0;
 
+        // Function to change the background color (cycles through colors)
+        function changeBackground() {
+            colorIndex = (colorIndex + 1) % colors.length; // Move to next color first
+            document.body.style.backgroundColor = colors[colorIndex];
         }
 
         // Function to show an alert message
@@ -18,9 +22,14 @@
             alert("Welcome to JavaScript!");
         }
 
-        // Function to hide the paragraph
-        function hideParagraph() {
-            document.getElementById("intro").style.display = "none";
+        // Function to toggle (show/hide) the paragraph
+        function toggleParagraph() {
+            const para = document.getElementById("intro");
+            if (para.style.display === "none") {
+                para.style.display = "block";
+            } else {
+                para.style.display = "none";
+            }
         }
 
     </script>
@@ -29,20 +38,29 @@
 
 <body>
 
+    <button type="button" onclick="changeBackground()">Change Background Color</button>
+    <button type="button" onclick="showAlert()">Show Message</button>
+    <button type="button" onclick="toggleParagraph()">Show/Hide Paragraph</button>
+
+    <br>
+
+    <h1>
+        My First Web Page
+    </h1>
+
     <p id="intro">
-        Hello! My name is Fahad. I am learning web development and exploring HTML, CSS, and JavaScript.
+        Hello! This is Fahad Karim. I am a student from CSE department.<br>
+        I aim to be a good web developer.<br>
+        My other aim is to be a computer science and engineer.<br>
+        I would like to appreciate myself for web development.<br>
         
     </p>
 
-    <img src="https://cdn.pixabay.com/photo/2021/12/12/20/00/play-6865967_1280.jpg" alt="Girl in a jacket" width="500" height="500">
-    
     <br>
 
-    <button type="button" onclick="changeBackground()">Button 1</button>
+    <img src="./Fahad.jpg" alt="Boy in a punjabi">
 
-    <button type="button" onclick="showAlert()">Button 2</button>
 
-    <button type="button" onclick="hideParagraph()">Button 3</button>
 
 
     <!--
